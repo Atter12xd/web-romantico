@@ -1,62 +1,69 @@
 ---
 import { Image } from "astro:assets";
-import Avatar from "../images/frieren-devian.png";
+import Avatar from "../images/kiara15.jpeg";
 ---
 
 <!-- Hero section -->
-<section class="bg-gray-100 py-8 sm:py-12 lg:py-16 dark:bg-gray-900">
-  <div class="my-auto mx-auto max-w-screen-xl px-4 text-center dark:">
+<section class="bg-gradient-to-b from-purple-800 to-purple-950 py-12 sm:py-16 lg:py-20 text-white">
+  <div class="mx-auto max-w-screen-xl px-4 text-center">
     <!-- Profile photo -->
-    <div class="flex justify-center mb-8 sm:my-8 md:my-12">
+    <div class="flex justify-center mb-8">
       <Image
         src={Avatar}
         alt="Avatar"
-        class="rounded-full w-32 h-32 object-cover object-top border-8 border-purple-500"
+        class="rounded-full w-36 h-36 object-cover object-top border-4 border-purple-300 shadow-xl transition-transform duration-300 hover:scale-105"
       />
     </div>
-    <h1
-      class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-800 md:text-5xl lg:text-6xl dark:text-gray-300"
-    >
-      Welcome to Frieren Land! 💫
+
+    <!-- Birthday Message -->
+    <h1 class="mb-4 text-5xl font-extrabold tracking-tight leading-tight md:text-6xl animate-fade-in">
+      🎉 ¡Feliz Cumpleaños, mi amor! 💖
     </h1>
-    <p
-      class="mb-8 text-lg font-normal text-gray-800 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-300"
-    >
-      Join me on this exciting adventure as we explore the magical landscape
-      together.
+    <p class="mb-8 text-lg font-medium text-gray-200 lg:text-xl sm:px-16 lg:px-48">
+      Hoy celebramos tu día especial. Gracias por ser mi compañera, mi inspiración y mi todo. 🌟
     </p>
-    <!-- CTA -->
-    <div
-      class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:mb-8 md:mb-12"
-    >
-      <a
-        href="https://github.com/leifjerami/astro-frieren-blog-kit"
-        target="_blank"
-        class="inline-flex justify-center items-center py-3 px-5 mr-4 text-base font-bold text-center text-purple-500 rounded-full bg-gray-100 focus:ring-4 focus:ring-purple-300 border-8 border-purple-500 hover:border-purple-300 transition-colors duration-300 dark:bg-gray-900"
+
+    <!-- Video Section -->
+    <div class="mt-8">
+      <video
+        class="mx-auto rounded-lg shadow-lg border-4 border-purple-300 w-full max-w-xl sm:max-w-3xl lg:max-w-4xl lg:max-h-[600px]"
+        controls
       >
-        Download
-        <svg
-          class="w-3.5 h-3.5 ms-2"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 16 18"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M8 1v11m0 0 4-4m-4 4L4 8m11 4v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3"
-          ></path>
-        </svg>
-      </a>
+        <source src="/videos/video_kiara.mp4" type="video/mp4" />
+        Tu navegador no soporta la reproducción de videos.
+      </video>
+      <p class="mt-4 text-lg font-medium text-gray-300">
+        🎥 Este video fue hecho con todo mi amor para ti. 💕
+      </p>
+    </div>
+
+    <!-- Emotional Support Section -->
+    <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 mt-8">
       <a
         href="#"
-        class="inline-flex justify-center items-center py-3 px-5 text-base font-bold text-gray-900 focus:outline-none bg-purple-500 rounded-full border-8 border-purple-500 hover:bg-purple-300 hover:border-purple-500 focus:z-10 transition-colors duration-300"
+        class="inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-blue-600 border-2 border-blue-400 rounded-full hover:bg-blue-400 hover:text-gray-900 transition"
+        onclick="openModal('triste')"
       >
-        Let's Chat!
+        ¿Te sientes un poco apagada? 💙
+      </a>
+
+      <a
+        href="#"
+        class="inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-red-600 border-2 border-red-400 rounded-full hover:bg-red-400 hover:text-gray-900 transition"
+        onclick="openModal('desconfianza')"
+      >
+        ¿Tienes dudas en tu corazón? ❤️
       </a>
     </div>
   </div>
 </section>
+
+<script>
+  function openModal(type) {
+    if (type === 'triste') {
+      alert('💌 Mi amor, recuerda que siempre estaré aquí para ti. Eres mi mayor alegría y mereces todo lo bueno del mundo. 🌸');
+    } else if (type === 'desconfianza') {
+      alert('💌 Mi vida, confío en ti plenamente. Siempre seré transparente contigo porque eres mi mayor tesoro. ❤️');
+    }
+  }
+</script>

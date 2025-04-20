@@ -1,8 +1,8 @@
 export const AppConfig = {
-	site_name: 'Frieren Land',
-	title: 'Frieren Land - Fan Club',
-	description: 'A Place For Fans to Meet',
-	author: 'reifu',
-	locale_region: 'en',
-	locale: 'en'
+	site_name: "Pagina web de KIARA Y ATTER",
+	title: 'El amor y las aventuras de kiara y atter',
+	description: 'Desde planes y aventuras hasta el amor kiara y atter lo tienen todo.',
+	author: 'Atter Mayer Basilio Rengifo',
+	locale_region: 'es',
+	locale: 'es'
 };
