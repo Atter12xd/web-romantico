@@ -32,7 +32,11 @@ const formattedDate = formatDate(pubDate);
     <div class="pt-6">
       {
         img.src ? (
-          <img src={img.src} alt={img.alt} style={{ borderRadius: "5%" }} />
+          <img 
+            src={img.src} 
+            alt={img.alt} 
+            class="w-64 h-auto rounded-lg shadow-lg" 
+          />
         ) : null
       }
     </div>

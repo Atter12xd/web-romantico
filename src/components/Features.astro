@@ -1,61 +1,63 @@
-<!-- Features section -->
+---
+// Importamos las imágenes usando astro:assets
+import { Image } from "astro:assets";
+import Kiara8 from "../images/kiara8.jpeg";
+import Kiara21 from "../images/kiara21.jpeg";
+import Kiara14 from "../images/kiara14.jpeg";
+---
+
 <section class="text-gray-800 bg-purple-500 dark:bg-purple-500">
   <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
     <div class="max-w-screen-md mx-auto mb-8 lg:mb-16 text-center">
       <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
-        Astro Themes For Anime Fans
+        Una motivación para cumplir nuestras metas como pareja 💖
       </h2>
     </div>
     <!-- Features grid -->
     <div
       class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 max-w-4xl mx-auto"
     >
-      <!-- Notion Icon -->
+      <!-- Primera frase motivacional -->
       <div>
-        <div
-          class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12"
-        >
-          <!-- Use Markdown SVG -->
-          <img
-            src="/markdown.svg"
-            alt="Markdown Icon"
-            class="w-5 h-5 text-gray-800 lg:w-6 lg:h-6"
+        <div class="flex justify-center items-center mb-4">
+          <Image
+            src={Kiara8}
+            alt="Motivación 1"
+            class="rounded-lg shadow-lg w-full max-w-sm"
           />
         </div>
-        <h3 class="mb-2 text-xl font-bold">Powered by Markdown</h3>
-        <p class="text-gray-900">Faster writing with the easiest formatting.</p>
-      </div>
-      <!-- Obsidian Icon -->
-      <div>
-        <div
-          class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12"
-        >
-          <!-- Use Obsidian SVG -->
-          <img
-            src="/obsidian.svg"
-            alt="Obsidian Icon"
-            class="w-5 h-5 text-gray-800 lg:w-6 lg:h-6"
-          />
-        </div>
-        <h3 class="mb-2 text-xl font-bold">Obsidian as Editor</h3>
+        <h3 class="mb-2 text-xl font-bold">Confianza y Comunicación</h3>
         <p class="text-gray-900">
-          Draft and publish from the comfort of your personal Obsidian vault.
+          La confianza es la base de todo. Hablemos siempre con el corazón abierto. 💬
         </p>
       </div>
-      <!-- Astro.js Icon -->
+      <!-- Segunda frase motivacional -->
       <div>
-        <div
-          class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12"
-        >
-          <!-- Use Astro SVG -->
-          <img
-            src="/astro.svg"
-            alt="Astro Icon"
-            class="w-5 h-5 text-gray-800 lg:w-6 lg:h-6"
+        <div class="flex justify-center items-center mb-4">
+          <Image
+            src={Kiara21}
+            alt="Motivación 2"
+            class="rounded-lg shadow-lg w-full max-w-sm"
           />
         </div>
-        <h3 class="mb-2 text-xl font-bold">New Coder Friendly</h3>
-        <p class="text-gray-900">Astro makes it easy to customize.</p>
+        <h3 class="mb-2 text-xl font-bold">Trabajo en Equipo</h3>
+        <p class="text-gray-900">
+          Juntos somos más fuertes. Cada meta es un paso más hacia nuestros sueños. 🌟
+        </p>
+      </div>
+      <!-- Tercera frase motivacional -->
+      <div>
+        <div class="flex justify-center items-center mb-4">
+          <Image
+            src={Kiara14}
+            alt="Motivación 3"
+            class="rounded-lg shadow-lg w-full max-w-sm"
+          />
+        </div>
+        <h3 class="mb-2 text-xl font-bold">Amor y Resiliencia</h3>
+        <p class="text-gray-900">
+          El amor nos da la fuerza para superar cualquier obstáculo. 💪❤️
+        </p>
       </div>
     </div>
   </div>
