@@ -37,67 +37,79 @@ import Avatar from "../images/kiara15.jpeg";
       </p>
     </div>
 
-    <!-- Emotional Support Section -->
-    <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 mt-8">
-      <a
-        href="#"
-        class="inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-blue-600 border-2 border-blue-400 rounded-full hover:bg-blue-400 hover:text-gray-900 transition"
-        onclick="openModal('triste')"
-      >
-      No quiero que confíes en mí solo por lo que digo, sino por lo que voy a demostrarte día tras día. 💙
-      </a>
-
-      <a
-        href="#"
-        class="inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-red-600 border-2 border-red-400 rounded-full hover:bg-red-400 hover:text-gray-900 transition"
-        onclick="openModal('desconfianza')"
-      >
-      Estar contigo no es una etapa, es mi decisión de vida. Y voy a cuidarte como se cuida lo que más se valora. ❤️
-      </a>
+    <div class="flex flex-col space-y-4 mt-8">
+      <!-- Frase introductoria -->
+      <p class="mb-4 text-lg font-medium text-gray-300 text-center">
+        🌟 Mi amor, cada vez que te sientas triste o tengas dudas, vuelve aquí. Estas frases cambiarán con el tiempo, pero mi amor por ti siempre será el mismo. 💖
+      </p>
+    
+      <!-- Botones con frases -->
+      <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+        <button
+          id="btn-triste"
+          class="inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-blue-600 border-2 border-blue-400 rounded-full hover:bg-blue-400 hover:text-gray-900 transition"
+          onclick="changeBackground('btn-triste', 'bg-blue-800')"
+        >
+          No quiero que confíes en mí solo por lo que digo, sino por lo que voy a demostrarte día tras día. 💙
+        </button>
+    
+        <button
+          id="btn-desconfianza"
+          class="inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-red-600 border-2 border-red-400 rounded-full hover:bg-red-400 hover:text-gray-900 transition"
+          onclick="changeBackground('btn-desconfianza', 'bg-red-800')"
+        >
+          Estar contigo no es una etapa, es mi decisión de vida. Y voy a cuidarte como se cuida lo que más se valora. ❤️
+        </button>
+      </div>
+    
+      <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 mt-8">
+        <button
+          id="btn-prometo"
+          class="inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-blue-600 border-2 border-blue-400 rounded-full hover:bg-blue-400 hover:text-gray-900 transition"
+          onclick="changeBackground('btn-prometo', 'bg-blue-800')"
+        >
+          No prometo ser perfecto, pero sí estar, escuchar, aprender y crecer contigo. 💙
+        </button>
+    
+        <button
+          id="btn-prioridad"
+          class="inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-red-600 border-2 border-red-400 rounded-full hover:bg-red-400 hover:text-gray-900 transition"
+          onclick="changeBackground('btn-prioridad', 'bg-red-800')"
+        >
+          Tú no eres mi opción, eres mi prioridad. Y voy a hacer que siempre te sientas así. ❤️
+        </button>
+      </div>
+    
+      <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 mt-8">
+        <button
+          id="btn-mundo"
+          class="inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-blue-600 border-2 border-blue-400 rounded-full hover:bg-blue-400 hover:text-gray-900 transition"
+          onclick="changeBackground('btn-mundo', 'bg-blue-800')"
+        >
+          Sé que el mundo no siempre es fácil, pero si tú estás conmigo, puedo con todo. 💙
+        </button>
+    
+        <button
+          id="btn-confianza"
+          class="inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-red-600 border-2 border-red-400 rounded-full hover:bg-red-400 hover:text-gray-900 transition"
+          onclick="changeBackground('btn-confianza', 'bg-red-800')"
+        >
+          La confianza no se exige, se construye. Y yo estoy aquí para construirla contigo, sin prisa, pero sin pausa. ❤️
+        </button>
+      </div>
     </div>
-    <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 mt-8">
-      <a
-        href="#"
-        class="inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-blue-600 border-2 border-blue-400 rounded-full hover:bg-blue-400 hover:text-gray-900 transition"
-        onclick="openModal('triste')"
-      >
-      No prometo ser perfecto, pero sí estar, escuchar, aprender y crecer contigo. 💙
-      </a>
-
-      <a
-        href="#"
-        class="inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-red-600 border-2 border-red-400 rounded-full hover:bg-red-400 hover:text-gray-900 transition"
-        onclick="openModal('desconfianza')"
-      >
-      Tú no eres mi opción, eres mi prioridad. Y voy a hacer que siempre te sientas así. ❤️
-      </a>
-    </div>
-    <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 mt-8">
-      <a
-        href="#"
-        class="inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-blue-600 border-2 border-blue-400 rounded-full hover:bg-blue-400 hover:text-gray-900 transition"
-        onclick="openModal('triste')"
-      >
-      Sé que el mundo no siempre es fácil, pero si tú estás conmigo, puedo con todo. 💙
-      </a>
-
-      <a
-        href="#"
-        class="inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-red-600 border-2 border-red-400 rounded-full hover:bg-red-400 hover:text-gray-900 transition"
-        onclick="openModal('desconfianza')"
-      >
-      La confianza no se exige, se construye. Y yo estoy aquí para construirla contigo, sin prisa, pero sin pausa. ❤️
-      </a>
-    </div>
-  </div>
 </section>
 
 <script>
-  function openModal(type: string) {
-    if (type === 'triste') {
-      alert('💌 Mi amor, recuerda que siempre estaré aquí para ti. Eres mi mayor alegría y mereces todo lo bueno del mundo. 🌸');
-    } else if (type === 'desconfianza') {
-      alert('💌 Mi vida, confío en ti plenamente. Siempre seré transparente contigo porque eres mi mayor tesoro. ❤️');
+  function changeBackground(buttonId: string, newClass: string): void {
+    const button = document.getElementById(buttonId);
+
+    if (button) {
+      // Solo ejecuta si el botón existe
+      button.classList.remove('bg-blue-600', 'bg-red-600'); // Remueve los colores originales
+      button.classList.add(newClass); // Agrega el nuevo color
+    } else {
+      console.warn(`El botón con id "${buttonId}" no fue encontrado.`);
     }
   }
 </script>
